@@ -8,7 +8,7 @@ use \PDO;
 class CategoriaDAO extends DAO
 {
    
-    private $conexao;
+    protected $conexao;
 
     function __construct() 
     {

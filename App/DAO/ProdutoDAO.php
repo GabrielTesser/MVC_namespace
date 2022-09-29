@@ -9,7 +9,7 @@ use \PDO;
 class ProdutoDAO extends DAO
 {
 
-    private $conexao;
+    protected $conexao;
 
     public function __construct()
     {

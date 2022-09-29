@@ -12,7 +12,7 @@ class FuncionarioController extends Controller
         $model = new FuncionarioModel();
         $model->getAllRows();
 
-        parent::render('Pessoa/ListaFuncionario', $model);
+        parent::render('Funcionario/ListaFuncionario', $model);
     }
 
     public static function form()
@@ -23,7 +23,7 @@ class FuncionarioController extends Controller
         if(isset($_GET['id']))
             $model = $model->getById( (int) $_GET['id']);
 
-            parent::render('Pessoa/ListaFuncionario', $model);
+            parent::render('Funcionario/FormFuncionario', $model);
         }
 
     public static function save()

@@ -22,7 +22,7 @@ class PessoaController extends Controller
         if(isset($_GET['id'])) 
             $model = $model->getById( (int) $_GET['id']); 
 
-        parent::render('APP/View/modules/Pessoa/FormPessoa', $model);
+        parent::render('Pessoa/FormPessoa', $model);
 
     }
 

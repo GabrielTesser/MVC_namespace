@@ -7,7 +7,7 @@ use \PDO;
 
 class FuncionarioDAO extends DAO
 {
-    private $conexao;
+    protected $conexao;
 
     public function __construct()
     {

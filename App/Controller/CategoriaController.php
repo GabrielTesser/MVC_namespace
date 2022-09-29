@@ -12,7 +12,7 @@ class CategoriaController extends Controller
         $model = new CategoriaModel();
         $model->getAllRows();
 
-        parent::render('Pessoa/ListaCategoria', $model);
+        parent::render('Categoria/ListaCategoria', $model);
     }
 
     public static function form()
@@ -24,7 +24,7 @@ class CategoriaController extends Controller
             $model = $model->getById( (int) $$_GET['id']);
         }
 
-        parent::render('Pessoa/ListaCategoria', $model);
+        parent::render('Categoria/FormCategoria', $model);
     }
 
     public static function save() 
